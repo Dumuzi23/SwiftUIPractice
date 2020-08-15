@@ -16,6 +16,7 @@
 		20ED374824E6C61100993C63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20ED374624E6C61100993C63 /* LaunchScreen.storyboard */; };
 		20ED375324E6C61100993C63 /* SwiftUIPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED375224E6C61100993C63 /* SwiftUIPracticeTests.swift */; };
 		20ED375E24E6C61100993C63 /* SwiftUIPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20ED375D24E6C61100993C63 /* SwiftUIPracticeUITests.swift */; };
+		20ED376D24E7D54600993C63 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20ED376C24E7D54600993C63 /* Pacifico-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		20ED375924E6C61100993C63 /* SwiftUIPracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIPracticeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20ED375D24E6C61100993C63 /* SwiftUIPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeUITests.swift; sourceTree = "<group>"; };
 		20ED375F24E6C61100993C63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20ED376C24E7D54600993C63 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pacifico-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		20ED373724E6C60F00993C63 /* SwiftUIPractice */ = {
 			isa = PBXGroup;
 			children = (
+				20ED376B24E7D51800993C63 /* fonts */,
 				20ED373824E6C60F00993C63 /* AppDelegate.swift */,
 				20ED373A24E6C60F00993C63 /* SceneDelegate.swift */,
 				20ED373F24E6C60F00993C63 /* ContentView.swift */,
@@ -137,6 +140,14 @@
 				20ED375F24E6C61100993C63 /* Info.plist */,
 			);
 			path = SwiftUIPracticeUITests;
+			sourceTree = "<group>";
+		};
+		20ED376B24E7D51800993C63 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				20ED376C24E7D54600993C63 /* Pacifico-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20ED374824E6C61100993C63 /* LaunchScreen.storyboard in Resources */,
+				20ED376D24E7D54600993C63 /* Pacifico-Regular.ttf in Resources */,
 				20ED374524E6C61100993C63 /* Preview Assets.xcassets in Resources */,
 				20ED374224E6C61100993C63 /* Assets.xcassets in Resources */,
 			);
