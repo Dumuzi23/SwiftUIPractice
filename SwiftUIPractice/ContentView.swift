@@ -12,7 +12,7 @@ struct ContentView: View {
     
     @State var showedHand = "rock"
     let handList = ["rock", "scissors", "paper"]
-
+    @State var timer = Timer()
     
     var body: some View {
         ZStack {
@@ -27,7 +27,11 @@ struct ContentView: View {
                 .padding(.horizontal)
                 Spacer()
                 Button(action: {
-                    self.showedHand = self.handList.randomElement()!
+                    self.timer = Timer.scheduledTimer(timeInterval: 0.5,
+                                                      target: self,
+                                                      selector: Selector(("shuffleHand")),
+                                                      userInfo: nil,
+                                                      repeats: true)
                 }) {
                     Text("Start")
                         .font(Font.custom("Pacifico-Regular", size: 50))
@@ -35,9 +39,15 @@ struct ContentView: View {
                         .padding(.horizontal)
                 }
                 .background(Color.red)
+                .cornerRadius(25)
             }
         }
     }
+
+    func shuffleHand() {
+        showedHand = handList.randomElement()!
+    }
+    
 }
 
 struct JankenView: View {
@@ -50,6 +60,7 @@ struct JankenView: View {
             .aspectRatio(contentMode: .fit)
             .frame(width: 200, height: 200)
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
